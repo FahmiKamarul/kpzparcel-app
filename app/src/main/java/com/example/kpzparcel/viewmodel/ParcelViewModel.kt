@@ -23,7 +23,7 @@ class ParcelViewModel : ViewModel() {
 
     // Setup Retrofit connection
     private val api: ParcelApi = Retrofit.Builder()
-        .baseUrl("http://34.124.171.36/")
+        .baseUrl("https://kpzparcel.my/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
         .create(ParcelApi::class.java)
